@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Canaria Technologies Automation Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains a technical challenge for candidates that have progressed past the first interview. Congratulations!
 
-## Available Scripts
+The challenge is not intended to be difficult. If you have any difficulties please contact us to help out.
 
-In the project directory, you can run:
 
-### `npm start`
+# Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You will need to have an environment ready where you can do some development. Specifically, you will need:
+* A GitHub account [Create a GitHub account](https://github.com/join)
+* An IDE. VSCode will work, so will WebStorm.
+  * [Download Visual Studio Code for free](https://code.visualstudio.com/download)
+  * [Download a free trial of WebStorm](https://www.jetbrains.com/webstorm/download/)
+* The current LTS version of NodeJS (V14) [Download Node](https://nodejs.org/en/download/)
+* The curent version of NPM
+  * To update to the current version of npm run `npm install -g npm@latest`
+* A git client.
+  * [Download Git command line](https://git-scm.com/downloads)
+  * [Download GitHub Desktop](https://desktop.github.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    
+# Challenge Process
 
-### `npm test`
+The goal of the challenge is to update an existing repository that does not have any CI/CD to have automatic CI/CD launched on every change to the code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the automation-challenge repo into your own repo
+1. Add continuous integration with a github action
+1. Clone the repo (This is really easy with github desktop)
+1. Install the dependencies by running `npm install`
+1. Commit the changes (Also easy with github desktop)
+1. Push the changes (Again pretty easy with github desktop)
+    * This push should launch the CI
+    * The CI should fail at this point when running the tests
+1. Fix the test and commit and push again
+    * This push should launch the CI again
+    * The CI should succeed this time
+1. Add continuous deployment to github pages
+    * You will need to enable github pages in your repo. [This article will guide you through it](https://guides.github.com/features/pages/).
+1. Push a change to trigger the deployment (you can just add a newline to a file, such as App.js)
+1. Confirm the deployment at github pages
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The challenge is not intended to test your ability to use source control or IDEs. If you're struggling with source control or IDEs let us know so we can help you out.
