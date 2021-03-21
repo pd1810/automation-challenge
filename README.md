@@ -24,12 +24,12 @@ You will need to have an environment ready where you can do some development. Sp
 
 The goal of the challenge is to update an existing repository that does not have any CI/CD to have automatic CI/CD launched on every change to the code.
 
-1. Fork the automation-challenge repo into your own repo
+1. Fork the automation-challenge repo into your own repo (the fork button is at the top right)
 1. Add continuous integration with a github action
-1. Clone the repo (This is really easy with github desktop)
-1. Install the dependencies by running `npm install`
-1. Commit the changes (Also easy with github desktop)
-1. Push the changes (Again pretty easy with github desktop)
+1. Clone the repo (This is really easy with github desktop, `File->Clone Repository...`)
+1. Install the dependencies by running `npm install` in the repo directory
+1. Commit the changes (In github desktop, enter a message in the box above description then click `Commit to master`)
+1. Push the changes (In github desktop, `push to origin`)
     * This push should launch the CI
     * The CI should fail at this point when running the tests
 1. Fix the test and commit and push again
@@ -40,4 +40,4 @@ The goal of the challenge is to update an existing repository that does not have
 1. Push a change to trigger the deployment (you can just add a newline to a file, such as App.js)
 1. Confirm the deployment at github pages
 
-The challenge is not intended to test your ability to use source control or IDEs. If you're struggling with source control or IDEs let us know so we can help you out.
+The challenge is not intended to test your ability to use source control or IDEs. If you're struggling with source control or IDEs let us know, so we can help you out.
