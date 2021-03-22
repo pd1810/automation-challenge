@@ -29,7 +29,7 @@ The goal of the challenge is to update an existing repository that does not have
 1. Clone the repo (This is really easy with github desktop, `File->Clone Repository...`)
 1. Install the dependencies by running `npm install` in the repo directory
 1. Commit the changes (In github desktop, enter a message in the box above description then click `Commit to master`)
-1. Push the changes (In github desktop, `push to origin`)
+1. Push the changes (In github desktop, `push origin`)
     * This push should launch the CI
     * The CI should fail at this point when running the tests
 1. Fix the test and commit and push again
