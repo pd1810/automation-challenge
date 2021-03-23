@@ -24,6 +24,8 @@ You will need to have an environment ready where you can do some development. Sp
 
 The goal of the challenge is to update an existing repository that does not have any CI/CD to have automatic CI/CD launched on every change to the code.
 
+At a high level there are objectives. First, to add rudimentary CI so that tests are run on every code change. Second, once CI is in place, to add CD to deploy the build after every successful build. This can be broken down into the following tasks:
+
 1. Fork the automation-challenge repo into your own repo (the fork button is at the top right)
 1. Add continuous integration with a github action
 1. Clone the repo (This is really easy with github desktop, `File->Clone Repository...`)
