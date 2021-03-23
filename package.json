@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
-    "gh-pages": "^3.1.0",
     "preval.macro": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -17,7 +16,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages --dist build --branch publish",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },

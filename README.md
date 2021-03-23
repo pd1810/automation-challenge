@@ -30,9 +30,11 @@ Second, once CI is in place, to add CD to deploy the build after every successfu
 the following tasks:
 
 1. Fork the automation-challenge repo into your own repo (the fork button is at the top right of the github UI)
-1. Add continuous integration with a github action (this is a nodejs project)
+1. Add continuous integration with a github action (this is a Node.js project. If you look in the _package.json_ file
+   you will find scripts for start, build and test. The CI needs to run the build and test scripts under Node.js.)
 1. Clone the repo that you forked, that is, make a local copy on your computer (This is really easy with github
-   desktop, `File->Clone Repository...`)
+   desktop, `File->Clone Repository...`. If you cloned before creating the CI script, you can fetch and pull the
+   changes using github desktop.)
 1. Install the dependencies by running `npm install` in the repo directory
 1. Commit the changes, the only change at the moment will be to the file _package-lock.json_ that tracks dependencies
    (In github desktop, enter a message in the box above description then click `Commit to master`)
@@ -64,7 +66,7 @@ the following tasks:
         git push --set-upstream origin publish
         ```
     * You will need to enable github pages in your repo. You will need to create a branch before you can deploy to
-      github pages [This article will guide you through it](https://guides.github.com/features/pages/).
+      github pages, which the above script will do. [This article will guide you through enabling github pages](https://guides.github.com/features/pages/).
 1. Push a change to trigger the deployment (you can just add a newline to a file, such as App.js)
 1. Confirm the deployment at github pages
 
