@@ -2,7 +2,9 @@
 
 This repo contains a technical challenge for candidates that have progressed past the first interview. Congratulations!
 
-The challenge is not intended to be difficult. If you have any difficulties please contact us to help out.
+The goal of the challenge for Canaria is to gain insight into your CI/CD and automation understanding. It is not
+intended to test your abilities in using source control systems or IDEs. If you get stuck somewhere please contact
+us so we can help you out.
 
 
 # Prerequisites
@@ -22,9 +24,12 @@ You will need to have an environment ready where you can do some development. Sp
     
 # Challenge Process
 
-The goal of the challenge is to update an existing repository that does not have any CI/CD to have automatic CI/CD launched on every change to the code.
+The objective of the challenge is to update an existing repository that does not have any CI/CD to have automatic
+CI/CD launched on every change to the code.
 
-At a high level there are objectives. First, to add rudimentary CI so that tests are run on every code change. Second, once CI is in place, to add CD to deploy the build after every successful build. This can be broken down into the following tasks:
+At a high level there are objectives. First, to add rudimentary CI so that tests are run on every code change. Second,
+once CI is in place, to add CD to deploy the build after every successful build. This can be broken down into the
+following tasks:
 
 1. Fork the automation-challenge repo into your own repo (the fork button is at the top right)
 1. Add continuous integration with a github action
@@ -41,5 +46,3 @@ At a high level there are objectives. First, to add rudimentary CI so that tests
     * You will need to enable github pages in your repo. [This article will guide you through it](https://guides.github.com/features/pages/).
 1. Push a change to trigger the deployment (you can just add a newline to a file, such as App.js)
 1. Confirm the deployment at github pages
-
-The challenge is not intended to test your ability to use source control or IDEs. If you're struggling with source control or IDEs let us know, so we can help you out.
