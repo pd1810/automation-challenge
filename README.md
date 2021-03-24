@@ -6,6 +6,8 @@ The goal of the challenge for Canaria is to gain insight into your CI/CD and aut
 intended to test your abilities in using source control systems or IDEs. If you get stuck somewhere please contact
 us so we can help you out.
 
+Use any and all resources to complete the challenge that you would use to complete any other work related tasks.
+
 
 # Prerequisites
 
@@ -49,11 +51,11 @@ the following tasks:
 1. Add continuous deployment to github pages
     * To do so, update the CI/CD script created for the github action to push the build of the web page back to the
       code repository.
-    * The exact commands to run to publish the build back to a branch in the repo are ridiculously complicated and
-      very difficult to figure out exactly which ones will get the job done just right. For the purpose of this
-      exercise, the goal is to figure out where they would go in a CI/CD script so that they will publish the build
-      of the webpage. Bonus points for commenting the CI/CD script in such a way that indicates an understanding of
-      what the commands are doing.
+    * The exact commands to run to commit the build back to a branch in the repo are ridiculously complicated and
+      very difficult to figure out exactly which ones will get the job done just right. The commands are listed
+      below. For the purpose of this exercise, the goal is to figure out where they would go in a CI/CD script so
+      that they will publish the build of the webpage. Bonus points for commenting the CI/CD script in such a way
+      that indicates an understanding of what the commands are doing.
         ```
         git config user.email "automation@canariatechnologies.com"
         git config user.name "automation"
