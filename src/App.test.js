@@ -7,7 +7,7 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('failure placeholder', () => {
+//test('failure placeholder', () => {
   // This test will fail. It's purpose is to see a failed CI build in the log. Just delete this test once that has been accomplished.
-  expect(undefined).toBeInTheDocument();
-});
+//  expect(undefined).toBeInTheDocument();
+//});
