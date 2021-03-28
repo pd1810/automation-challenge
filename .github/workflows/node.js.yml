@@ -32,10 +32,11 @@ jobs:
     - run: git config user.name "automation"
     - run: git fetch
     - run: git checkout publish || git checkout --orphan publish
-    - run: shopt -s extglob
+    #- run: shopt -s extglob
     #- run: rm -rf !(".git"|"build") .!(""|"."|"git")
     #- run: mv build/* .
     #- run: rm -rf build
+    - run: find '(' -name .git -o -name build -o -name .git ')' -prune -o -exec rm -rf {} \;
     - run: git add .
     - run: git commit -m "Publish build"
     - run: git push --set-upstream origin publish
