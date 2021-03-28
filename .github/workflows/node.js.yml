@@ -33,7 +33,7 @@ jobs:
     - run: git fetch
     - run: git checkout publish || git checkout --orphan publish
     - run: shopt -s extglob
-    - run: rm -rf !(".git"|"build") .!(""|"."|"git")
+    #- run: rm -rf !(".git"|"build") .!(""|"."|"git")
     - run: mv build/* .
     - run: rm -rf build
     - run: git add .
