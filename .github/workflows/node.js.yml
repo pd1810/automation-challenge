@@ -34,8 +34,8 @@ jobs:
     - run: git checkout publish || git checkout --orphan publish
     - run: shopt -s extglob
     #- run: rm -rf !(".git"|"build") .!(""|"."|"git")
-    - run: mv build/* .
-    - run: rm -rf build
+    #- run: mv build/* .
+    #- run: rm -rf build
     - run: git add .
     - run: git commit -m "Publish build"
     - run: git push --set-upstream origin publish
