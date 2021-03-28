@@ -34,7 +34,7 @@ jobs:
     - run: git checkout publish || git checkout --orphan publish
     #- run: shopt -s extglob
     #- run: rm -rf !(".git"|"build") .!(""|"."|"git")
-     - run: mv build/* .
+     - run: mv -uf build/* .
     #- run: rm -rf build
     #- run: find '(' -name .git -o -name build -o -name .git ')' -prune -o -exec rm -rf {} \;
     - run: git add .
