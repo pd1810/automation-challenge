@@ -35,8 +35,8 @@ jobs:
     #to set git configuration settings
     - run: git config user.name "automation"
     #to set git configuration settings
-    - run: git fetch
-    #gets the vommits and files
+    - run: git pull --rebase
+    #gets the commits and files
     - run: git checkout publish || git checkout --orphan publish
     #navigate to publish branch and create new branch 
     - run: cp -r build/* .
