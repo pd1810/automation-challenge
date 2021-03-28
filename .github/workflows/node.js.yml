@@ -26,13 +26,24 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+    # to install diepencies
     - run: npm run build --if-present
+    #runs the script "build"
     - run: npm test
+    #this runs a predefined command specified in the test.
     - run: git config user.email "automation@canariatechnologies.com"
+    #to set git configuration settings
     - run: git config user.name "automation"
+    #to set git configuration settings
     - run: git fetch
+    #gets the vommits and files
     - run: git checkout publish || git checkout --orphan publish
+    #navigate to publish branch and create new branch 
     - run: cp -r build/* .
+    #copy build folder
     - run: git add .
+    #adds all the modified and new files 
     - run: git commit -m "Publish build"
+    #creates a snapshot of current changes
     - run: git push --set-upstream origin publish
+    #setting upstream branch
